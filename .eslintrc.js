@@ -8,6 +8,7 @@ module.exports = {
         'airbnb',
         'prettier',
         'plugin:react/jsx-runtime',
+        'plugin:storybook/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -49,4 +50,12 @@ module.exports = {
             },
         },
     },
+    overrides: [
+        {
+            files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
+            rules: {
+                'react/function-component-definition': 0,
+            },
+        },
+    ],
 }

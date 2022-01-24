@@ -5,4 +5,5 @@ module.exports = {
     ],
     addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
     framework: '@storybook/react',
+    staticDirs: [{ from: '../src/assets', to: 'assets' }],
 }

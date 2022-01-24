@@ -1,41 +1,57 @@
-import React from 'react'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { PlusIcon } from '@heroicons/react/solid'
+import { ComponentMeta, ComponentStory } from '@storybook/react'
+import {
+    PrimaryButton,
+    SecondaryButton,
+    TextButton,
+} from '../styles/buttons.style'
 
-import { Button } from './Button'
-
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-    title: 'Example/Button',
-    component: Button,
-    // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
-} as ComponentMeta<typeof Button>
+    title: 'Basic UI/Button',
+    component: PrimaryButton,
+} as ComponentMeta<typeof PrimaryButton>
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
+const PrimaryButtonTemplate: ComponentStory<typeof PrimaryButton> = ({
+    label,
+    disabled,
+    icon,
+}: any) => (
+    <PrimaryButton disabled={disabled}>
+        {icon && <PlusIcon />}
+        {label}
+    </PrimaryButton>
+)
 
-export const Primary = Template.bind({})
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
+const SecondaryButtonTemplate: ComponentStory<typeof PrimaryButton> = ({
+    label,
+    disabled,
+    icon,
+}: any) => (
+    <SecondaryButton disabled={disabled}>
+        {icon && <PlusIcon />}
+        {label}
+    </SecondaryButton>
+)
+
+const TextButtonTemplate: ComponentStory<typeof PrimaryButton> = ({
+    label,
+}: any) => <TextButton>{label}</TextButton>
+
+export const Primary = PrimaryButtonTemplate.bind({})
 Primary.args = {
-    primary: true,
-    label: 'Button',
+    label: 'New task',
+    disabled: false,
+    icon: false,
 }
 
-export const Secondary = Template.bind({})
+export const Secondary = SecondaryButtonTemplate.bind({})
 Secondary.args = {
-    label: 'Button',
+    label: 'Back',
+    disabled: false,
+    icon: false,
 }
 
-export const Large = Template.bind({})
-Large.args = {
-    size: 'large',
-    label: 'Button',
-}
-
-export const Small = Template.bind({})
-Small.args = {
-    size: 'small',
-    label: 'Button',
+export const Text = TextButtonTemplate.bind({})
+Text.args = {
+    label: 'See more...',
 }

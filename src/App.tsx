@@ -1,7 +1,13 @@
 import Login from './components/Login'
+import GlobalStyle from './globalStyles'
 
 function App() {
-    return <Login />
+    return (
+        <>
+            <GlobalStyle />
+            <Login />
+        </>
+    )
 }
 
 export default App
