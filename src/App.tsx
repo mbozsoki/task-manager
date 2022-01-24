@@ -1,15 +1,7 @@
-import { useEffect, useState } from 'react'
+import Login from './components/Login'
 
 function App() {
-    const [message, setMessage] = useState()
-
-    useEffect(() => {
-        fetch('/api/sign-in', { method: 'GET' })
-            .then((response) => response.json())
-            .then((response) => setMessage(response.message))
-    }, [])
-
-    return <div>Response: {message}</div>
+    return <Login />
 }
 
 export default App
