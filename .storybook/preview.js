@@ -1,5 +1,5 @@
 import { addDecorator } from '@storybook/react'
-import StyleReset from '../src/StyleReset'
+import StyleReset from '../src/styleReset'
 import GlobalStyle from '../src/globalStyles'
 
 export const parameters = {
