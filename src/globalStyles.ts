@@ -31,15 +31,29 @@ const GlobalStyle = createGlobalStyle`
         --primary-bg-hover-color: #9C35D4;
         --primary-bg-active-color: #8627B9;
 
-        --secondary-color: #434054;
+        --secondary-color: #464255;
         --secondary-bg-color: #ecebf3;
         --secondary-bg-hover-color: #DBD9E8;
         --secondary-bg-active-color: #C3BFD9;
 
         --disabled-color: #d0cfd5;
         --disabled-bg-color: #ecebf3;
-
+        --placeholder-color: #d7d9dc;
         --border-color: #e8e8f0;
+        --highlight-bg-color: #e9dbf3;
+
+        --info-color: #57ccf3;
+        --info-bg-color: #e4f6fb;
+
+        --success-color: #17df37;
+        --success-bg-color: #dffbea;
+
+        --low-priorty-color: #02a389;
+        --low-priorty-bg-color: #d3ebe8;
+        --medium-piority-color: #ffbb53;
+        --medium-piority-bg-color: #fcf2e3;
+        --high-priority-color: #ff5a5a;
+        --high-priority-bg-color: #fde5e5;
     }
 
     body {
