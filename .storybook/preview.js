@@ -1,4 +1,5 @@
 import { addDecorator } from '@storybook/react'
+import StyleReset from '../src/StyleReset'
 import GlobalStyle from '../src/globalStyles'
 
 export const parameters = {
@@ -13,6 +14,7 @@ export const parameters = {
 
 addDecorator((story) => (
     <>
+        <StyleReset />
         <GlobalStyle />
         {story()}
     </>
