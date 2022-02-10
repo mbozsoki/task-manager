@@ -25,12 +25,7 @@ module.exports = {
             2,
             { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
         ],
-        'react/function-component-definition': [
-            2,
-            {
-                namedComponents: 'function-declaration',
-            },
-        ],
+        'react/function-component-definition': 0,
         'prettier/prettier': 'error',
         'import/extensions': [
             'error',
@@ -50,12 +45,4 @@ module.exports = {
             },
         },
     },
-    overrides: [
-        {
-            files: ['*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
-            rules: {
-                'react/function-component-definition': 0,
-            },
-        },
-    ],
 }

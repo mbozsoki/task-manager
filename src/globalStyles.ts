@@ -26,13 +26,13 @@ const GlobalStyle = createGlobalStyle`
         --font-family: 'Poppins-Regular';
         --background-color: #fdfdfd;
 
-        --primary-color: #f3f2f7;
+        --primary-color: #fbfbfb;
         --primary-bg-color: #ab53db;
         --primary-bg-hover-color: #9C35D4;
         --primary-bg-active-color: #8627B9;
 
         --secondary-color: #464255;
-        --secondary-bg-color: #ecebf3;
+        --secondary-bg-color: #ecdef5;
         --secondary-bg-hover-color: #DBD9E8;
         --secondary-bg-active-color: #C3BFD9;
 
@@ -54,6 +54,8 @@ const GlobalStyle = createGlobalStyle`
         --medium-piority-bg-color: #fcf2e3;
         --high-priority-color: #ff5a5a;
         --high-priority-bg-color: #fde5e5;
+
+        --side-bar-icon-color: #b3b6b5;
     }
 
     body {

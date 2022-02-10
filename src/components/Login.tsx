@@ -1,11 +1,11 @@
-import { MutableRefObject, useRef, useState } from 'react'
+import { FC, MutableRefObject, useRef, useState } from 'react'
 import apiClient from '../http-common'
 import { PrimaryButton } from '../styles/buttons.style'
 import { Column } from '../styles/positional-blocks.style'
 
 type SignInResponse = { secret: string }
 
-function Login() {
+const Login: FC = () => {
     const [token, setToken] = useState<string>('')
     const emailRef = useRef() as MutableRefObject<HTMLInputElement>
     const passwordRef = useRef() as MutableRefObject<HTMLInputElement>
