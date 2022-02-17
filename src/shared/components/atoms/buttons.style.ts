@@ -4,20 +4,22 @@ interface Props {
     disabled?: boolean
 }
 
-const DefaultButton = styled.button`
+const BaseButton = styled.button`
+    display: flex;
+    align-items: center;
     border: none;
     padding: 0.75rem 2rem;
     border-radius: 1rem;
     cursor: pointer;
 
     > svg {
-        height: 18px;
-        width: 18px;
+        height: 1.5rem;
+        width: 1.5rem;
         padding-right: 8px;
     }
 `
 
-export const PrimaryButton = styled(DefaultButton)`
+export const PrimaryButton = styled(BaseButton)`
     ${({ disabled }: Props) =>
         disabled
             ? `
@@ -41,7 +43,7 @@ export const PrimaryButton = styled(DefaultButton)`
     transition: ease 100ms background-color;
 `
 
-export const SecondaryButton = styled(DefaultButton)`
+export const SecondaryButton = styled(BaseButton)`
     ${({ disabled }: Props) =>
         disabled
             ? `
@@ -65,7 +67,7 @@ export const SecondaryButton = styled(DefaultButton)`
     transition: ease 100ms background-color;
 `
 
-export const TextButton = styled(DefaultButton)`
+export const TextButton = styled(BaseButton)`
     background-color: transparent;
     color: var(--primary-bg-color);
     transition: ease 100ms color;

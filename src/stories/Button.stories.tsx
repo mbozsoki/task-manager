@@ -4,10 +4,10 @@ import {
     PrimaryButton,
     SecondaryButton,
     TextButton,
-} from '../styles/buttons.style'
+} from '../shared/components/atoms/buttons.style'
 
 export default {
-    title: 'Basic UI/Button',
+    title: 'Button',
     component: PrimaryButton,
 } as ComponentMeta<typeof PrimaryButton>
 

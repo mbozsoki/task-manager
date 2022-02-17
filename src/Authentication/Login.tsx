@@ -1,7 +1,7 @@
 import { FC, MutableRefObject, useRef, useState } from 'react'
-import apiClient from '../http-common'
-import { PrimaryButton } from '../styles/buttons.style'
-import { Column } from '../styles/positional-blocks.style'
+import { PrimaryButton } from '../shared/components/atoms/buttons.style'
+import { Column } from '../shared/components/atoms/positional-blocks.style'
+import apiClient from '../shared/utils/http-common'
 
 type SignInResponse = { secret: string }
 

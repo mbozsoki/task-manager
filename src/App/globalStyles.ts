@@ -3,23 +3,23 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Poppins-Thin';
-        src: url('../assets/Poppins-Thin.ttf') format('truetype');
+        src: url('./assets/Poppins-Thin.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Poppins-Light';
-        src: url('/assets/Poppins-Light.ttf') format('truetype');
+        src: url('./assets/Poppins-Light.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Poppins-Regular';
-        src: url('/assets/Poppins-Regular.ttf') format('truetype');
+        src: url('./assets/Poppins-Regular.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Poppins-Medium';
-        src: url('/assets/Poppins-Medium.ttf') format('truetype');
+        src: url('./assets/Poppins-Medium.ttf') format('truetype');
     }
     @font-face {
         font-family: 'Poppins-SemiBold';
-        src: url('/assets/Poppins-SemiBold.ttf') format('truetype');
+        src: url('./assets/Poppins-SemiBold.ttf') format('truetype');
     }
 
     :root {

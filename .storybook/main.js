@@ -9,5 +9,5 @@ module.exports = {
         '@storybook/addon-a11y',
     ],
     framework: '@storybook/react',
-    staticDirs: [{ from: '../src/assets', to: 'assets' }],
+    staticDirs: [{ from: '../src/App/assets', to: 'assets' }],
 }

@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import Login from './components/Login'
+import Login from '../Authentication/Login'
 import GlobalStyle from './globalStyles'
 import StyleReset from './styleReset'
 

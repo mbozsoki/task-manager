@@ -1,6 +1,6 @@
 import { addDecorator } from '@storybook/react'
-import StyleReset from '../src/styleReset'
-import GlobalStyle from '../src/globalStyles'
+import GlobalStyle from '../src/App/globalStyles'
+import StyleReset from '../src/App/styleReset'
 
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
